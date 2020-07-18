@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Personal Chat</title>
+	<link rel="stylesheet" href="css/PersonalChat.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container">
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-2">
+			<p class="display-4 text-md-center text-sm-left">Chitter Chat</p>
+		</nav>
+		<div style="background-color:lightblue"><p>Hello <label for="myalue" id="loginUserName"></label></p></div>
+		<div id="onlineusers">
+			<center><h1>Online Users </h1></center>
+			
+					<table id="onlinePersonList" width="90%" >
+        <thead>
+		<tr>
+			
+			<th>Name</th>
+           
+			<th>Phone No.</th>
+			<th>Start Chatting</th>
+			
+
+		</tr>
+        </thead>
+        <tbody></tbody>
+	</table>
+			
+		</div>
+
+		<div id="allusers">
+			<center><h1>All Users </h1></center>
+				<!--<ul id="allPersonList"></ul>-->
+				<table id="allPersonList" width="90%" >
+        <thead>
+		<tr>
+			
+			<th>Name</th>
+           
+			<th>Phone No.</th>
+			<th>Start Chatting</th>
+			
+
+		</tr>
+        </thead>
+        <tbody></tbody>
+	</table>
+		</div>
+	
+	</div>
+		<script src="/socket.io/socket.io.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/PersonalChat.js"></script>
+</body>
+
+</html>

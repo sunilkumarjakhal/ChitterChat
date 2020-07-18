@@ -1,0 +1,13 @@
+#onlineusers{
+	
+	width:50%;
+float:left;
+}
+#allusers{
+
+	width:50%;
+	float:left;
+}
+ul {
+  list-style-type: none;
+}

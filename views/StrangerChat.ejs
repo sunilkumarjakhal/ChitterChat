@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Stranger Chat</title>
+	 <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/chitterChat.css">
+</head>
+<body>
+		<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-2">
+			<p class="display-4 text-md-center text-sm-left">Chitter Chat</p>
+		</nav>
+		<div >
+			<div style="background-color:lightblue"><p> <label for="myalue" id="ConnectedUser">Connecting.....</label></p></div>
+		<div class="row mt-2" id="messages">
+			<ul id="messagesList"></ul>
+
+			
+		</div>
+		</div>
+		
+		<div class="container mt-2 fixed-bottom">
+			<div class="row">
+			<div class="col-10 ">
+
+            <input type="text" id="msg" placeholder="Type message here..." class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+		
+			
+		</div>
+		
+		<div class="col-1 ">
+			
+				<p class="text-center">
+				<button class="btn btn-primary btn-md" id="sendmsg">Send</button>
+			</p>	
+				
+			
+		</div>
+		
+		<div class="col-1">
+			
+				<p class="text-center">
+				<button class="btn btn-primary btn-md" id="refresh">Exit</button>
+			</p>	
+				
+			
+		</div>
+		</div>
+			
+		</div>
+			
+		
+		
+		
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/jquery.min.js" ></script>
+    <script src="js/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="js/StrangerChat.js"></script>
+</body>
+</html>
+

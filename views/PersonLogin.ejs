@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Person Login</title>
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-2">
+			<p class="display-4 text-md-center text-sm-left">Chitter Chat</p>
+		</nav>
+		<div class="row mt-5 mx-auto">
+			<div class="col-md-6 col-sm-12 mt-2">
+
+
+				<div class="card mb-2">
+					<div class="card-body text-center">
+						<form id="signupform" name="signupform">
+							<h1 class="card-title">Sign up</h1>
+							<input type="text" placeholder="Enter Your name..." class="form-control mt-2 " aria-label="Default" aria-describedby="inputGroup-sizing-default"
+							 id="name" required>
+							<input type="number" min="7000000000" max="9999999999" placeholder="Enter your mobile no..." class="form-control mt-2 " aria-label="Default" aria-describedby="inputGroup-sizing-default"
+							 id="mobile_no" required>
+							<input type="password" placeholder="Enter your password..." class="form-control mt-2 " aria-label="Default" aria-describedby="inputGroup-sizing-default"
+							 id="password" required>
+							<input type="password" placeholder="Enter your confirm password..." class="form-control mt-2 " aria-label="Default" aria-describedby="inputGroup-sizing-default"
+							 id="confirm_password" required>
+							<div class="form-group mt-2" id="form-group">
+								<div class="btn-group " role="group">
+
+									<button type="button" class='btn btn-outline-info active' name="gender" id="optionMale" value="male">Male</button>
+									<button type="button" class='btn btn-outline-info' name="gender" id="optionFemale" value="female">Female</button>
+								</div>
+							</div>
+								<p class="lead">
+									<button type="submit" class="btn btn-success btn-md text-left mt-5">
+										Sign up</button>
+								</p>
+						</form>
+						    
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-md-6 col-sm-12 mt-2">
+
+
+				<div class="card"><form id="loginform" name="loginform">
+					<div class="card-body text-center">
+						<h1 class="card-title">Login</h1>
+						<input type="number" placeholder="Enter Your mobile no..." min="7000000000" max="9999999999"class="form-control mt-2 " aria-label="Default" aria-describedby="inputGroup-sizing-default"
+						 id="login_number" required>
+						<input type="password" placeholder="Enter your password..." class="form-control mt-2 " aria-label="Default" aria-describedby="inputGroup-sizing-default"
+						 id="login_password" required>
+						<p class="lead">
+							<button class="btn btn-success btn-md text-left mt-5"  id="loginbtn">
+								Login</button>
+						</p>
+
+					</div>
+				</form>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/PersonLogin.js"></script>
+</body>
+
+</html>
